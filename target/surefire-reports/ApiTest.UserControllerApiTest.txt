@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: ApiTest.UserControllerApiTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.457 s <<< FAILURE! - in ApiTest.UserControllerApiTest
+CreditAddedSuccessfullyWhenCreditIsValid{String}[1]  Time elapsed: 0.089 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at ApiTest.UserControllerApiTest.CreditAddedSuccessfullyWhenCreditIsValid(UserControllerApiTest.java:86)
+
+ReturnsMockUserWhenUsernameIsValid{String}[1]  Time elapsed: 0.145 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at ApiTest.UserControllerApiTest.ReturnsMockUserWhenUsernameIsValid(UserControllerApiTest.java:72)
+
+NotExistentUserWhenUserIsNotExist{String}[1]  Time elapsed: 0.104 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<404> but was:<400>
+	at ApiTest.UserControllerApiTest.NotExistentUserWhenUserIsNotExist(UserControllerApiTest.java:100)
+
